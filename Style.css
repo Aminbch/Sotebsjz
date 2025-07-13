@@ -1,0 +1,33 @@
+:root{
+  --clr-primary:#6366F1;
+  --clr-dark:#111827;
+  --clr-light:#F9FAFB;
+  --radius:8px;
+  --max-width:1100px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;color:var(--clr-dark);line-height:1.6;background:var(--clr-light);}
+.container{max-width:var(--max-width);margin:auto;padding:0 1rem;}
+header{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.05);position:sticky;top:0;z-index:10;}
+nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 0;}
+.logo{display:flex;align-items:center;font-weight:700;font-size:1.25rem;color:var(--clr-primary);}
+.logo img{height:32px;margin-right:.5rem;}
+.nav-links{display:flex;gap:2rem;list-style:none;align-items:center;}
+.nav-links a{color:var(--clr-dark);text-decoration:none;font-weight:600;}
+.btn-primary{background:var(--clr-primary);color:#fff;padding:.6rem 1.2rem;border-radius:var(--radius);text-decoration:none;font-weight:600;}
+.btn-primary.large{padding:.9rem 2rem;font-size:1.1rem;}
+.hero{background:url('../img/hero.jpg') center/cover no-repeat;height:70vh;display:flex;align-items:center;color:#fff;text-align:center;}
+.hero h1{font-size:3rem;font-weight:700;margin-bottom:1rem;}
+.hero p{max-width:600px;margin:0 auto 2rem;font-size:1.2rem;}
+.services,.portfolio{padding:5rem 1rem;text-align:center;}
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem;margin-top:3rem;}
+.card{background:#fff;border-radius:var(--radius);padding:2rem;box-shadow:0 4px 12px rgba(0,0,0,.05);}
+.card i{font-size:2.5rem;color:var(--clr-primary);margin-bottom:1rem;}
+.case img{width:100%;border-radius:var(--radius);margin-bottom:1rem;}
+footer{background:#111827;color:#fff;text-align:center;padding:2rem 0;}
+.hamburger{display:none;font-size:1.5rem;cursor:pointer;}
+@media(max-width:768px){
+  .hamburger{display:block;}
+  .nav-links{position:absolute;top:70px;right:1rem;background:#fff;flex-direction:column;padding:1rem;border-radius:var(--radius);box-shadow:0 4px 12px rgba(0,0,0,.1);display:none;}
+  .nav-links.show{display:flex;}
+}
