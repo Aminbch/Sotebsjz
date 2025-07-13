@@ -1,0 +1,4 @@
+@media(max-width:768px){
+  .hero h1{font-size:2rem;}
+  .plan{margin-bottom:2rem;}
+}
