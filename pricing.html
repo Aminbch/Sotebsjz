@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Pricing – Boostify</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
+</head>
+<body>
+  <header><nav class="container"> … same nav as index … </nav></header>
+
+  <section class="pricing-hero">
+    <div class="container">
+      <h1>Simple, Transparent Pricing</h1>
+      <p>Cancel anytime. 14-day money-back guarantee.</p>
+    </div>
+  </section>
+
+  <section class="plans">
+    <div class="container grid-3">
+      <div class="plan" data-price="4900" data-product="starter">
+        <h3>Starter</h3>
+        <div class="price">$49<span>/mo</span></div>
+        <ul>
+          <li>Instagram growth up to 1k followers/mo</li>
+          <li>3 posts/week design & copy</li>
+          <li>Monthly report</li>
+        </ul>
+        <button class="btn-primary choose">Choose</button>
+      </div>
+
+      <div class="plan featured" data-price="9900" data-product="pro">
+        <h3>Pro</h3>
+        <div class="price">$99<span>/mo</span></div>
+        <ul>
+          <li>Instagram + TikTok growth</li>
+          <li>5 posts + 2 Reels/TikToks/week</li>
+          <li>Story & highlight design</li>
+          <li>Weekly analytics call</li>
+        </ul>
+        <button class="btn-primary choose">Choose</button>
+      </div>
+
+      <div class="plan" data-price="24900" data-product="scale">
+        <h3>Scale</h3>
+        <div class="price">$249<span>/mo</span></div>
+        <ul>
+          <li>Everything in Pro</li>
+          <li>YouTube SEO & Shorts</li>
+          <li>UGC creator sourcing</li>
+          <li>Priority support & 24h turnaround</li>
+        </ul>
+        <button class="btn-primary choose">Choose</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="js/pricing.js"></script>
+</body>
+</html>
